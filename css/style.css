@@ -2042,7 +2042,7 @@ padding-right:3rem;
   /* Adjust padding-left to align text better */
   .service-item-text {
     padding-left: 45px;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
 
   /* Carousel dots container */
