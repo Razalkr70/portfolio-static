@@ -2365,17 +2365,27 @@ padding-right:3rem;
 /* Responsive corrections */
 @media (min-width: 320px) and (max-width: 767px) {
   .filter-bar {
-    justify-content: space-between; /* spread buttons evenly */
-    gap: 10px 0; /* vertical gap only */
-     padding: 0 30px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px; /* Reduced gap between buttons */
+    padding: 0 10px;
   }
 
   .filter-btn {
-    /* almost half width, so 2 fit per row */
-    margin: 0;    /* remove margin to avoid extra horizontal space */
-    box-sizing: border-box; /* include border/padding in width */
+    white-space: nowrap;       /* Prevent text wrap */
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    height: 36px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 25px;       /* More curved border */
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 }
+
 @media screen and (max-width: 765px) {
   .project-list {
     display: flex;
@@ -2542,7 +2552,7 @@ padding-right:3rem;
     height: 40px;
   }
   
- .timeline-resume .timeline-text {
+#track-resume .track-text{
  width:97%;
 }
 
