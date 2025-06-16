@@ -2105,7 +2105,7 @@ padding-top:10px;
     padding-right: 0.8rem;
     margin-bottom: 1.5rem;
     border-left: 3px solid var(--orange-yellow-crayola);
-    width: 70%;
+    width: 75%;
     box-sizing: border-box;
   }
    
@@ -2116,7 +2116,7 @@ padding-top:10px;
   margin-bottom: 0.1rem;
   margin-right: 1rem;
 
-  max-width: 60%;
+  max-width: 65%;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -2139,7 +2139,7 @@ padding-top:10px;
   white-space: normal;
   hyphens: auto;
 
-  max-width: 60%;  /* Adjust this value as needed */
+  max-width: 70%;  /* Adjust this value as needed */
 }
 
 }
