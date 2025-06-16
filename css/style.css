@@ -2105,7 +2105,8 @@ padding-top:10px;
     margin-bottom: 2rem;
     padding-left: 0.8rem;
     border-left: 3px solid var(--orange-yellow-crayola);
-    width:54%;
+   width: 100%;
+  box-sizing: border-box;
   }
 
   .timeline-item h3 {
@@ -2550,3 +2551,23 @@ padding-top:10px;
 }
 
 
+@media (max-width: 767px) {
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .service-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .service-header {
+    flex-wrap: wrap;
+  }
+
+  .service-item-text {
+    padding-left: 0; /* prevent overflow if text doesn't fit under icon */
+  }
+}
