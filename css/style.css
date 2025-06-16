@@ -2005,6 +2005,7 @@ textarea.form-input {
   }
    .service {
 padding-top:10px;
+padding-right:3rem;
 
 }
   /* Override service-list to flex container for horizontal sliding */
@@ -2014,6 +2015,7 @@ padding-top:10px;
     width: 300%; /* 3 slides */
     padding-left: 0 !important;
     margin-left: 0 !important;
+    padding-right: 2rem;
   }
 
   /* Each slide is 1/3 of the .service-list width */
