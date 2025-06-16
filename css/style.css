@@ -654,12 +654,12 @@ body {
   color: var(--white);
 }
 
-/* Timeline Section */
-.timeline-resume {
+/* Track Section (formerly Timeline Section) */
+.track-resume {
   margin-bottom: 2.5rem;
 }
 
-.timeline-resume .title-wrapper {
+.track-resume .title-wrapper {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -667,7 +667,7 @@ body {
   margin-top: 4rem;
 }
 
-.timeline-resume .icon-box {
+.track-resume .icon-box {
   background-color: var(--orange-yellow-crayola);
   color: #1e1e1e;
   padding: 0.6rem;
@@ -687,34 +687,34 @@ body {
   justify-content: center;
 }
 
-.timeline-resume .timeline-list {
+.track-resume .track-list {
   list-style: none;
   padding-left: 0;
 }
 
-.timeline-resume .timeline-item {
+.track-resume .track-item {
   margin-bottom: 3rem;
 }
 
-.timeline-resume .timeline-item-title {
+.track-resume .track-item-title {
   font-weight: bold;
   color: var(--orange-yellow-crayola);
   margin-bottom: 0.5rem;
 }
 
-.timeline-resume .timeline-text {
+.track-resume .track-text {
   color: #ccc;
   margin-top: 1rem;
   line-height: 1.5rem;
   font-size: 0.9rem;
-  text-align: left;           /* ensure left alignment */
-  word-break: break-word;     /* allow long words to break */
-  overflow-wrap: break-word;  /* ensure safe breaking */
-  white-space: normal;        /* remove any forced spacing */
-  margin-left: 0;             /* optional: remove left margin if exists */
-  margin-right: 0;            /* optional: remove right margin if exists */
-  padding-left: 0;            /* optional: remove left padding if exists */
-  padding-right: 0;           /* optional: remove right padding if exists */
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 
@@ -2259,46 +2259,47 @@ padding-right:3rem;
     font-size: 12px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .resume {
-    padding: 0rem; /* Reduce left & right padding to 1rem, adjust as needed */
+    padding: 0rem;
     max-width: 100%;
   }
 
-  .timeline-resume {
+  .track-resume {
     width: 100%;
-    padding: 0rem; /* Same here */
-    text-align: left; /* Align all text to left */
-  }
-
-  .timeline-resume .title-wrapper {
-    align-items: flex-start; /* Align items to left vertically */
+    padding: 0rem;
     text-align: left;
   }
 
-  .timeline-resume .timeline-item {
+  .track-resume .title-wrapper {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .track-resume .track-item {
     margin-bottom: 2rem;
     width: 100%;
     text-align: left;
   }
 
-  .timeline-resume .timeline-item-title {
+  .track-resume .track-item-title {
     font-size: 1rem;
     text-align: left;
   }
 
- .timeline-resume .timeline-text {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-  text-align: left;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  margin: 0;            /* Remove default margins */
-  padding: 0;           /* Remove default paddings */
-  white-space: normal;
+  .track-resume .track-text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: left;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+  }
 }
 
-}
 
 
 @media (min-width: 320px) and (max-width: 767px) {
