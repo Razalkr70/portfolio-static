@@ -2377,7 +2377,7 @@ padding-right:3rem;
     padding: 6px 12px;
     font-size: 1rem;
     line-height: 1.2rem;
-    height: 40px;
+    height: 48px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 25px;       /* More curved border */
@@ -2572,3 +2572,18 @@ padding-right:3rem;
 }
 
 
+@media screen and (max-width: 767px) {
+  .modal-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between buttons */
+    flex-wrap: nowrap; /* Ensure buttons stay on the same line */
+  }
+
+  .modal-buttons button,
+  .modal-buttons a {
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+}
