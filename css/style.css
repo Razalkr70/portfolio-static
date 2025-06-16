@@ -2368,19 +2368,21 @@ padding-right:3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px; /* Slightly increased for better tap spacing */
+    gap: 6px; /* Reduced gap between buttons */
     padding: 0 10px;
   }
 
   .filter-btn {
-    flex: 0 0 calc(50% - 8px); /* Two buttons per row */
-    padding: 10px 16px;
-    font-size: 1rem; /* Increased text size */
-    height: auto;
-    text-align: center;
-    border-radius: 30px; /* More curve */
+    white-space: nowrap;       /* Prevent text wrap */
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    height: 40px;
     box-sizing: border-box;
-    white-space: nowrap;
+    text-align: center;
+    border-radius: 25px;       /* More curved border */
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 }
 
