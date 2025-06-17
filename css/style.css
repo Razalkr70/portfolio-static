@@ -2586,4 +2586,8 @@ padding-right:3rem;
   .modal-buttons a {
     white-space: nowrap; /* Prevent text from wrapping */
   }
+   .skill-subtitle {
+    font-size: 0.95rem;     /* Slightly smaller on mobile */
+    margin-bottom: 1rem;    /* Reduce vertical spacing */
+  }
 }
