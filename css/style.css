@@ -2384,6 +2384,10 @@ padding-right:3rem;
     flex-grow: 0;
     flex-shrink: 0;
   }
+   .skill-subtitle {
+    font-size: 0.95rem;     /* Slightly smaller on mobile */
+    margin-bottom: 1rem;    /* Reduce vertical spacing */
+  }
 }
 
 @media screen and (max-width: 765px) {
