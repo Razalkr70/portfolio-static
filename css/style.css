@@ -972,6 +972,7 @@ body {
   color: #aaa;
   font-size: 28px;
   cursor: pointer;
+    z-index: 10;
 }
 .modal-buttons {
   display: flex;
