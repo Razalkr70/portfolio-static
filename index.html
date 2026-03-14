@@ -49,12 +49,12 @@
 </head>
 
 <body>
-<button id="feedbackBtn">Feedback</button>
+
   <header class="header">
     <button class="navbar-hamburger" aria-label="Toggle navigation menu">
       &#9776; <!-- Unicode hamburger icon -->
     </button>
-
+<!-- <img src="images/star.png" class="feedback-star" onclick="openFeedback()"> -->
     <div class="profile-section">
       <img src="images/Group 1000004584.png" alt="Razal K R" class="profile-pic">
     </div>
@@ -796,7 +796,149 @@ window.addEventListener('load', autoScrollSkills);
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- STAR BUTTON -->
+<!-- <img src="images/star.png" class="feedback-star" onclick="openFeedback()"> -->
 
+
+<!-- FEEDBACK POPUP -->
+<!-- <div class="feedback-popup" id="feedbackPopup">
+
+  <div class="feedback-container"> -->
+
+    <!-- Question 1 -->
+    <!-- <div class="question active">
+      <h3>How do you rate this portfolio?</h3>
+
+      <ol class="options">
+        <li onclick="nextQuestion()">Poor</li>
+        <li onclick="nextQuestion()">Average</li>
+        <li onclick="nextQuestion()">Good</li>
+        <li onclick="nextQuestion()">Very Good</li>
+        <li onclick="nextQuestion()">Excellent</li>
+      </ol>
+    </div> -->
+
+    <!-- Question 2 -->
+    <!-- <div class="question">
+      <h3>Was the website easy to navigate?</h3>
+
+      <ol class="options">
+        <li onclick="nextQuestion()">Yes</li>
+        <li onclick="nextQuestion()">No</li>
+      </ol>
+    </div> -->
+
+    <!-- Question 3 -->
+    <!-- <div class="question">
+      <h3>Would you recommend this portfolio?</h3>
+
+      <ol class="options">
+        <li onclick="nextQuestion()">Yes</li>
+        <li onclick="nextQuestion()">Maybe</li>
+        <li onclick="nextQuestion()">No</li>
+      </ol>
+    </div>
+
+    <-- Submit -->
+    <!-- <div class="question">
+      <h3>Submit your feedback</h3>
+      <button onclick="submitFeedback()">Submit</button>
+    </div> -->
+
+    <!-- Thank You -->
+    <!-- <div class="question" id="thankyou">
+      <h2>Thank you for your feedback</h2>
+    </div>
+
+  </div>
+
+</div> -->
+<!-- 
+
+<script>
+
+let current = 0; -->
+
+<!-- /* OPEN FEEDBACK */ -->
+<!-- 
+function openFeedback(){
+
+document.getElementById("feedbackPopup").style.display="flex";
+
+let questions = document.querySelectorAll(".question");
+
+questions.forEach(q => q.classList.remove("active"));
+
+questions[0].classList.add("active");
+
+current = 0;
+
+} -->
+<!-- 
+
+/* NEXT QUESTION */
+
+function nextQuestion(){
+
+let questions = document.querySelectorAll(".question");
+
+questions[current].classList.remove("active");
+
+current++;
+
+if(current < questions.length){
+questions[current].classList.add("active");
+}
+
+}
+
+
+/* SUBMIT FEEDBACK */
+
+function submitFeedback(){
+
+let questions = document.querySelectorAll(".question");
+
+questions[current].classList.remove("active");
+
+document.getElementById("thankyou").classList.add("active");
+
+setTimeout(()=>{
+
+document.getElementById("feedbackPopup").style.display="none";
+
+current = 0;
+
+},3000);
+
+}
+
+
+/* STAR SHAKE ANIMATION */
+
+window.addEventListener("DOMContentLoaded", ()=>{
+
+const star = document.querySelector(".feedback-star");
+
+function triggerShake(){
+
+star.classList.add("shake");
+
+setTimeout(()=>{
+star.classList.remove("shake");
+},600);
+
+}
+
+/* start shaking after slide animation */
+
+setTimeout(()=>{
+setInterval(triggerShake,7000);
+},1200);
+
+});
+
+</script> -->
 </body>
 
 </html>

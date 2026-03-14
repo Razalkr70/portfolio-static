@@ -2600,4 +2600,129 @@ padding-right:3rem;
   color: #555;
   margin-bottom: 10px;
   font-style: italic;
+}/* FEEDBACK POPUP */
+
+/* .feedback-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+justify-content:center;
+align-items:center;
+z-index:1000;
+} */
+
+
+/* CONTAINER */
+
+/* .feedback-container{
+background:#1e1e1e;
+padding:30px;
+width:420px;
+border-radius:12px;
+text-align:center;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+font-family:Arial, sans-serif;
+} */
+
+
+/* QUESTIONS */
+/* 
+.question{
+display:none;
 }
+
+.question.active{
+display:block;
+}
+ */
+
+/* OPTION LIST (A B C) */
+/* .options{
+list-style-type: upper-alpha;
+text-align:left;
+padding-left:25px;
+margin-top:15px;
+color:white;
+}
+
+.options li{
+margin:12px 0;
+cursor:pointer;
+transition:0.25s;
+color:white;
+} */
+
+/* force A B C color */
+
+/* .options li::marker{
+color:white;
+font-weight:bold;
+} */
+
+
+/* SUBMIT BUTTON */
+/* 
+.feedback-container button{
+background:var(--orange-yellow-crayola);
+color:black;
+border:none;
+padding:10px 18px;
+margin-top:10px;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+}
+
+.feedback-container button:hover{
+opacity:0.85;
+} */
+
+
+/* STAR BUTTON */
+/* 
+.feedback-star{
+position:fixed;
+top:20px;
+left:-60px;
+width:45px;
+cursor:pointer;
+z-index:999; */
+
+/* slide only */
+/* animation:slideStar 1s forwards;
+} */
+
+
+/* SLIDE ANIMATION */
+/* 
+@keyframes slideStar{
+from{
+left:-60px;
+}
+to{
+left:20px;
+}
+} */
+
+
+/* SHAKE CLASS */
+/* 
+.shake{
+animation:shakeStar 0.6s;
+} */
+
+
+/* SHAKE ANIMATION */
+/* 
+@keyframes shakeStar{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(12deg);}
+50%{transform:rotate(-12deg);}
+75%{transform:rotate(12deg);}
+100%{transform:rotate(0deg);}
+} */
