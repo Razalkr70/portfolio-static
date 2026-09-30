@@ -32,28 +32,33 @@
       display: grid;
       grid-template-rows: auto;
     }
-```css
 /* Header Action Buttons */
 .header-action-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  margin-top: 22px;
-  flex-wrap: wrap;
+  gap: 18px;                    /* Space between buttons */
+  margin-top: 32px;             /* Space above buttons */
+  margin-bottom: 10px;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 11px 20px;
+  gap: 9px;
+  min-width: 150px;
+  padding: 12px 22px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
+  white-space: nowrap;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .projects-btn {
@@ -77,19 +82,27 @@
   color: #1f1f1f;
 }
 
-/* Mobile */
+
+/* =========================
+   MOBILE
+   ========================= */
 @media (max-width: 600px) {
+
   .header-action-buttons {
-    gap: 8px;
-    margin-top: 18px;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 0 20px;
   }
 
   .header-btn {
-    padding: 10px 16px;
-    font-size: 0.8rem;
+    width: 100%;
+    max-width: 280px;
+    min-width: 0;
+    padding: 13px 20px;
+    font-size: 0.9rem;
   }
 }
-
     /* 
     .chat-icon {
       position: fixed;
