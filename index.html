@@ -32,6 +32,63 @@
       display: grid;
       grid-template-rows: auto;
     }
+```css
+/* Header Action Buttons */
+.header-action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.projects-btn {
+  background: var(--orange-yellow-crayola);
+  color: #1f1f1f;
+}
+
+.contact-btn {
+  border: 1px solid var(--orange-yellow-crayola);
+  color: var(--orange-yellow-crayola);
+  background: transparent;
+}
+
+.header-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.contact-btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: #1f1f1f;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .header-action-buttons {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .header-btn {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+}
 
     /* 
     .chat-icon {
@@ -82,6 +139,7 @@
         </li>
       </ul>
     </nav>
+    <div class="header-action-buttons"> <a href="projects.html" class="header-btn projects-btn"> <i class="fas fa-code"></i> My Projects </a> <a href="contact.html" class="header-btn contact-btn"> <i class="fas fa-envelope"></i> Contact Me </a> </div>
   </header>
   <main>
   <div class="main-content" style="margin-top:30px;margin-bottom:30px">
